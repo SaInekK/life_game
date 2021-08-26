@@ -21,5 +21,15 @@ def life():
     return render_template('life.html.j2', world=game.world, old_world=game.old_world, counter=game.generation)
 
 
+@app.route('/static/')
+@app.route('/static')
+def stat():
+    game = GameOfLife()
+    if game.generation > 0:
+        game.form_new_generation()
+    game.generation += 1
+    return render_template('life-static.html.j2', world=game.world, old_world=game.old_world, counter=game.generation)
+
+
 if __name__ == "__main__":  # Запуск вебсервера
     app.run(debug=True)

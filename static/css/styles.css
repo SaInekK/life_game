@@ -45,6 +45,11 @@ a, table {
     left: 55%;
 }
 
+.not-refresh {
+    top: 5%;
+    left: 75%;
+}
+
 .counter {
     margin: 20px 3px 3px;
     padding: 5px;
