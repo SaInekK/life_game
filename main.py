@@ -3,7 +3,7 @@ from game_of_life import GameOfLife
 
 app = Flask(__name__)
 
-'''Прошу прощения за съехавший счетчик - не знаю, как его поправить:)'''
+
 @app.route('/index')
 @app.route('/')
 def index():

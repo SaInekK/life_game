@@ -10,8 +10,8 @@ td {
 .cell {
     padding: 5px;
     background: whitesmoke;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .living-cell {
@@ -51,8 +51,6 @@ a, table {
 }
 
 .counter {
-    top: 5%;
-    left: 50%;
     margin: 20px 3px 3px;
     padding: 5px;
     font-family: "Book Antiqua", "Arial";
