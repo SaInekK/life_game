@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'base.html.j2' %}
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>Game of life</title>
+</head>
+
+<body>
+{% block app_content %}
+        <a class="btn btn-primary" href="{{ url_for('life') }}">Create life</a>
+{% endblock %}
+</body>
+</html>
+
