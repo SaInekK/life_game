@@ -51,6 +51,8 @@ a, table {
 }
 
 .counter {
+    top: 5%;
+    left: 50%;
     margin: 20px 3px 3px;
     padding: 5px;
     font-family: "Book Antiqua", "Arial";

@@ -9,11 +9,10 @@
 <body>
 
 {% block content %}
-
-<a href="/" class="btn btn-warning home">Home</a>
 <div class="counter">{{ counter }}</div>
-<a href="/life" class="btn btn-info refresh">Refresh</a>
-<a href="/static" class="btn btn-info not-refresh">Turn off autorefreshing</a>
+<a href="/" class="btn btn-warning home">Home</a>
+<a href="/static" class="btn btn-info refresh">Refresh</a>
+<a href="/life" class="btn btn-info not-refresh">Turn on autorefreshing</a>
 {% block app_content %}
 
 <div>
@@ -36,11 +35,5 @@
 {% endblock app_content %}
 {% endblock %}
 
-{% block scripts %}
-    {{ super() }}
-    <script>
-        setInterval(() => window.location.reload(), 1000);
-    </script>
-{% endblock %}
 </body>
 </html>
