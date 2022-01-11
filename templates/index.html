@@ -9,6 +9,21 @@
 <body>
 {% block app_content %}
         <a class="btn btn-primary" href="{{ url_for('life') }}">Create life</a>
+
+        <div class='form-custom'>
+                <form action="{{ url_for('index')}}" method="POST">
+                        <p>
+                                <label for="height">Height:</label>
+                                <input type="text" name="height">
+                                <label for="width">Width:</label>
+                                <input type="text" name="width">
+                        </p>
+
+                        <p>
+                                <input class="btn btn-primary" type="submit" value="Start with custom settings">
+                        </p>
+                </form>
+        </div>
 {% endblock %}
 </body>
 </html>
